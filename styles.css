@@ -1,0 +1,22 @@
+a:hover
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(120,120,120);
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.main_option
+{
+    margin-right: 20px;
+}
