@@ -1,22 +1,73 @@
-a:hover
-{
-    text-decoration: none;
-}
-
-h2
+.main_section
 {
     margin-top: 20px;
-    text-align: center;
-    font-size: 22px;
-    color: rgb(120,120,120);
-}
-
-a:hover
-{
+    margin-right: 5%;
+    text-align: right;
     text-decoration: none;
+    font-size: 17px;
+    padding-bottom: 20px;
 }
 
 .main_option
 {
-    margin-right: 20px;
+    margin-right: 3%;
+}
+
+.main_icon
+{
+    margin-right: 1%;
+}
+
+.main_icon:hover
+{
+    text-decoration: none;
+}
+
+.main_option:hover
+{
+    text-decoration: none;
+}
+
+.site_name
+{
+    font-weight: 300;
+    color: black;
+}
+
+.site_surname
+{
+    font-weight: 600;
+    margin-right: 46%;
+    color: black;
+
+}
+
+.border_bottom
+{
+    /*
+     * Bottom line .5px rgb(160, 160, 160)
+     */
+    border-bottom: .5px solid rgb(160, 160, 160);
+}
+
+.ml-25pc
+{
+    /*
+     * Left margin equals to 25%
+     */
+    margin-left: 25%;
+}
+
+.mt-5pc
+{
+    /*
+     * Top margin equals to 25%
+     */
+    margin-top: 5%;
+}
+
+.secondary_position
+{
+    font-weight: 200;
+    color: rgb(60, 60, 60);
 }
