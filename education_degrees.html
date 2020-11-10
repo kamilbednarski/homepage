@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/fa1cddd68f.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Linkt to styles.css -->
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Kamil Bednarski - Education</title>
+
+        <!-- JavaScript source file -->
+        <script src="homepage.js"></script>
+    </head>
+    <body>
+        <!-- Main section of page with sinks to other subpages. -->
+        <div class="main_section">
+            <a class="site_name border_logo">KAMIL<b>BEDNARSKI</b></a>
+            <a href="index.html" class="text-secondary main_option">ABOUT ME</a>
+            <a href="skills.html" class="text-secondary main_option">SKILLS</a>
+
+            <!-- Dropdown menu EDUCATION -->
+            <div class="dropdown main_option">
+                <a class="dropbtn main_option current_main_option">EDUCATION</a>
+                <div class="dropdown_content">
+                    <a class="main_option current_main_option">UNIVERSITY DEGREES</a>
+                    <a class="text-secondary" href="education.html">COURSES</a>
+                </div>
+            </div>
+
+            <a href="workexperience.html" class="text-secondary main_option">WORK EXPERIENCE</a>
+            <!-- GitHub icon with href -->
+            <a href="javascript:alertRedirect('https://www.linkedin.com/in/kamilbednarski/', 'Kamil Bednarski\'s LinkedIn');"
+                class="fa fa-linkedin-square text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- LinkedIn icon with href-->
+            <a href="javascript:alertRedirect('https://github.com/kamilbednarski', 'Kamil Bednarski\'s GitHub');"
+                class="fa fa-github text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- E-mail icon with href-->
+            <a href class="fas fa-envelope text-secondary main_option" onclick="sendMail();"></a>
+        </div>
+        <div class="border_bottom"></div>
+
+        <!-- Section of page with content. -->
+        <!-- Single position in subpage 'education'. -->
+        <div class="w-50 ml-25pc mt-5pc">
+            <p class="date">September 2017 - September 2019<br>Krakow, Poland</p>
+            <p class="secondary_content">Master degree</p>
+            <h6>FACULTY OF ARCHITECTURE</h6>
+            <p class="border_bottom"></p>
+            <p class="primary_content">Master of Science in Architecture and Urban Design</p>
+            <p class="primary_content">Issuing authority:<br>Cracow University of Technology</p>
+            <p></p>
+            <a class="secondary_content">Course validated by Royal Institute of British Architects.</a>
+        </div>
+
+        <!-- Single position in subpage 'education'. -->
+        <div class="w-50 ml-25pc mt-5pc">
+            <p class="date">September 2016<br>Strasbourg, France</p>
+            <h6>FACULTY OF ARCHITECTURE - INTERNATIONAL STUDENT EXCHANGE</h6>
+            <p class="border_bottom"></p>
+            <p class="primary_content">International student workshops focused on innovations in BIM design software and environmentally responsible design.<br>
+                The exchange, lasting a total of one month, was based on the joint work of students from Poland and France on the tasks entrusted to them
+                in the field of modern design using BIM technology.</p>
+            <p></p>
+        </div>
+
+        <!-- Single position in subpage 'education'. -->
+        <div class="w-50 ml-25pc mt-5pc">
+            <p class="date">September 2014 - September 2017<br>Krakow, Poland</p>
+            <p class="secondary_content">Bachelor degree</p>
+            <h6>FACULTY OF ARCHITECTURE</h6>
+            <p class="border_bottom"></p>
+            <p class="primary_content">Bachelor of Science in Architecture and Urban Design</p>
+            <p class="primary_content">Issuing authority:<br>Cracow University of Technology</p>
+            <p></p>
+            <a class="secondary_content">Course validated by Royal Institute of British Architects.</a>
+        </div>
+        <p></p>
+    </body>
+</html>

@@ -8,6 +8,7 @@
 
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/fa1cddd68f.js" crossorigin="anonymous"></script>
 
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -16,17 +17,35 @@
         <link href="styles.css" rel="stylesheet">
 
         <title>Kamil Bednarski - About me</title>
+
+        <!-- JavaScript source file -->
+        <script src="homepage.js"></script>
     </head>
     <body>
+        <!-- Main section of page with sinks to other subpages. -->
         <div class="main_section">
-            <a class="site_name">KAMIL</a>
-            <a class="main_option site_surname">BEDNARSKI</a>
-            <a class="main_option">ABOUT ME</a>
+            <a class="site_name border_logo">KAMIL<b>BEDNARSKI</b></a>
+            <a class="main_option current_main_option">ABOUT ME</a>
             <a href="skills.html" class="text-secondary main_option">SKILLS</a>
-            <a href="education.html" class="text-secondary main_option">EDUCATION</a>
+
+            <!-- Dropdown menu EDUCATION -->
+            <div class="dropdown main_option">
+                <a class="dropbtn text-secondary">EDUCATION</a>
+                <div class="dropdown_content">
+                    <a class="text-secondary" href="education_degrees.html">UNIVERSITY DEGREES</a>
+                    <a class="text-secondary" href="education.html">COURSES</a>
+                </div>
+            </div>
+
             <a href="workexperience.html" class="text-secondary main_option">WORK EXPERIENCE</a>
-            <a href="https://www.linkedin.com/in/kamilbednarski/" class="fa fa-linkedin-square text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
-            <a href="https://github.com/kamilbednarski" class="fa fa-github text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- GitHub icon with href -->
+            <a href="javascript:alertRedirect('https://www.linkedin.com/in/kamilbednarski/', 'Kamil Bednarski\'s LinkedIn');"
+                class="fa fa-linkedin-square text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- LinkedIn icon with href-->
+            <a href="javascript:alertRedirect('https://github.com/kamilbednarski', 'Kamil Bednarski\'s GitHub');"
+                class="fa fa-github text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- E-mail icon with href-->
+            <a href class="fas fa-envelope text-secondary main_option" onclick="sendMail();"></a>
         </div>
         <div class="border_bottom"></div>
     </body>
