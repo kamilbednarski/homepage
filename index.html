@@ -14,6 +14,8 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Linkt to styles.css -->
+        <link href="navbar.css" rel="stylesheet">
+        <link href="dropdownmenu.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
 
         <title>Kamil Bednarski - About me</title>
@@ -22,31 +24,72 @@
         <script src="homepage.js"></script>
     </head>
     <body>
-        <!-- Main section of page with sinks to other subpages. -->
-        <div class="main_section">
-            <a class="site_name border_logo">KAMIL<b>BEDNARSKI</b></a>
-            <a class="main_option current_main_option">ABOUT ME</a>
-            <a href="skills.html" class="text-secondary main_option">SKILLS</a>
+        <!-- Main navigation bar - Large -->
+        <div class="large_menu nav_bar">
+            <!-- Website logo -->
+            <span>
+                <a class="nav_bar_logo">KAMIL<b>BEDNARSKI</b></a>
+            </span>
 
-            <!-- Dropdown menu EDUCATION -->
-            <div class="dropdown main_option">
-                <a class="dropbtn text-secondary">EDUCATION</a>
+            <span class="w-25 p-3"></span>
+
+            <!-- Navbar option: About me -->
+            <span class="nav_bar_option">
+                <a class="current_main_option">ABOUT ME</a>
+            </span>
+
+            <!-- Navbar option: Skills -->
+            <span class="nav_bar_option">
+                <a href="skills.html" class="text-secondary">SKILLS</a>
+            </span>
+
+            <!-- Dropdown menu: EDUCATION -->
+            <span class="dropdown nav_bar_option">
+                <!-- Navbar header: EDUCATION -->
+                <a class="dropbtn nav_bar_option text-secondary">EDUCATION</a>
                 <div class="dropdown_content">
+                    <!-- Navbar options: UNIVERSITY DEGREES and COURSES -->
                     <a class="text-secondary" href="education_degrees.html">UNIVERSITY DEGREES</a>
                     <a class="text-secondary" href="education.html">COURSES</a>
                 </div>
-            </div>
+            </span>
 
-            <a href="workexperience.html" class="text-secondary main_option">WORK EXPERIENCE</a>
-            <!-- GitHub icon with href -->
-            <a href="javascript:alertRedirect('https://www.linkedin.com/in/kamilbednarski/', 'Kamil Bednarski\'s LinkedIn');"
-                class="fa fa-linkedin-square text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
-            <!-- LinkedIn icon with href-->
-            <a href="javascript:alertRedirect('https://github.com/kamilbednarski', 'Kamil Bednarski\'s GitHub');"
-                class="fa fa-github text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
-            <!-- E-mail icon with href-->
-            <a href class="fas fa-envelope text-secondary main_option" onclick="sendMail();"></a>
+            <!-- Navbar option: Work experience -->
+            <span class="nav_bar_option">
+                <a href="workexperience.html" class="text-secondary">WORK EXPERIENCE</a>
+            </span>
+
+            <!-- Navbar option: LinkedIn icon with href -->
+            <span class="nav_bar_icon">
+                <a href="javascript:alertRedirect('https://www.linkedin.com/in/kamilbednarski/', 'Kamil Bednarski\'s LinkedIn');"
+                    class="fa fa-linkedin-square text-secondary" style="font-size:19px" aria-hidden="true"></a>
+            </span>
+
+            <!-- Navbar option: GitHub icon with href-->
+            <span class="nav_bar_icon">
+                <a href="javascript:alertRedirect('https://github.com/kamilbednarski', 'Kamil Bednarski\'s GitHub');"
+                    class="fa fa-github text-secondary" style="font-size:19px" aria-hidden="true"></a>
+            </span>
+
+            <!-- Navbar option: E-mail icon with href-->
+            <span class="nav_bar_icon">
+                <a href class="fas fa-envelope text-secondary" onclick="sendMail();"></a>
+            </span>
         </div>
+
+        <!-- Main navigation bar - Small -->
+        <div class="small_menu">
+
+            <!-- Website logo -->
+            <span>
+                <a class="nav_bar_logo">KAMIL<b>BEDNARSKI</b></a>
+            </span>
+            <!-- Menu icon for width < 1200px -->
+            <span class= "nav_bar_menu_icon">
+                <a class="fas fa-bars text-secondary text-decoration-none"></a>
+            </span>
+        </div>
+
         <div class="border_bottom"></div>
     </body>
 </html>

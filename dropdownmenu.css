@@ -1,0 +1,30 @@
+/* STYLES FOR DROPDOWN NAVBAR MENU */
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content
+{
+    margin-left: -63px;
+    padding-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    min-width: 230px;
+    text-align: center;
+    border-bottom: .5px solid #BDBDBD;
+}
+
+.dropdown_content a
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown_content
+{
+    display: block;
+}

@@ -8,33 +8,86 @@
 
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/fa1cddd68f.js" crossorigin="anonymous"></script>
 
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Linkt to styles.css -->
+        <link href="navbar.css" rel="stylesheet">
+        <link href="dropdownmenu.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
 
-        <title>Kamil Bednarski - Work experience</title>
+        <title>Kamil Bednarski - Work Experience</title>
+
+        <!-- JavaScript source file -->
+        <script src="homepage.js"></script>
     </head>
     <body>
-        <div class="main_section">
-            <a class="site_name border_logo">KAMIL<b>BEDNARSKI</b></a>
-            <a href="index.html" class="text-secondary main_option">ABOUT ME</a>
-            <a href="skills.html" class="text-secondary main_option">SKILLS</a>
+        <!-- Main navigation bar - Large -->
+        <div class="large_menu nav_bar">
+            <!-- Website logo -->
+            <span>
+                <a class="nav_bar_logo">KAMIL<b>BEDNARSKI</b></a>
+            </span>
 
-            <!-- Dropdown menu EDUCATION -->
-            <div class="dropdown main_option">
-                <a class="dropbtn text-secondary">EDUCATION</a>
+            <span class="w-25 p-3"></span>
+
+            <!-- Navbar option: About me -->
+            <span class="nav_bar_option">
+                <a href="index.html" class="text-secondary">ABOUT ME</a>
+            </span>
+
+            <!-- Navbar option: Skills -->
+            <span class="nav_bar_option">
+                <a href="skills.html" class="text-secondary">SKILLS</a>
+            </span>
+
+            <!-- Dropdown menu: EDUCATION -->
+            <span class="dropdown nav_bar_option">
+                <!-- Navbar header: EDUCATION -->
+                <a class="dropbtn nav_bar_option text-secondary">EDUCATION</a>
                 <div class="dropdown_content">
+                    <!-- Navbar options: UNIVERSITY DEGREES and COURSES -->
                     <a class="text-secondary" href="education_degrees.html">UNIVERSITY DEGREES</a>
                     <a class="text-secondary" href="education.html">COURSES</a>
                 </div>
-            </div>
+            </span>
 
-            <a class="main_option">WORK EXPERIENCE</a>
-            <a href="https://www.linkedin.com/in/kamilbednarski/" class="fa fa-linkedin-square text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
-            <a href="https://github.com/kamilbednarski" class="fa fa-github text-secondary main_icon" style="font-size:19px" aria-hidden="true"></a>
+            <!-- Navbar option: Work experience -->
+            <span class="nav_bar_option">
+                <a class="current_main_option">WORK EXPERIENCE</a>
+            </span>
+
+            <!-- Navbar option: LinkedIn icon with href -->
+            <span class="nav_bar_icon">
+                <a href="javascript:alertRedirect('https://www.linkedin.com/in/kamilbednarski/', 'Kamil Bednarski\'s LinkedIn');"
+                    class="fa fa-linkedin-square text-secondary" style="font-size:19px" aria-hidden="true"></a>
+            </span>
+
+            <!-- Navbar option: GitHub icon with href-->
+            <span class="nav_bar_icon">
+                <a href="javascript:alertRedirect('https://github.com/kamilbednarski', 'Kamil Bednarski\'s GitHub');"
+                    class="fa fa-github text-secondary" style="font-size:19px" aria-hidden="true"></a>
+            </span>
+
+            <!-- Navbar option: E-mail icon with href-->
+            <span class="nav_bar_icon">
+                <a href class="fas fa-envelope text-secondary" onclick="sendMail();"></a>
+            </span>
+        </div>
+
+        <!-- Main navigation bar - Small -->
+        <div class="small_menu">
+
+            <!-- Website logo -->
+            <span>
+                <a class="nav_bar_logo">KAMIL<b>BEDNARSKI</b></a>
+            </span>
+            <!-- Menu icon for width < 1200px -->
+            <span class= "nav_bar_menu_icon">
+                <a class="fas fa-bars text-secondary text-decoration-none"></a>
+            </span>
         </div>
         <div class="border_bottom"></div>
     </body>
